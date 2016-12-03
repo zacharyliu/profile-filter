@@ -1,0 +1,38 @@
+.main {
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.card {
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+
+#canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cropper-crop-box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('filter.png');
+  background-size: cover;
+  pointer-events: none;
+}
+
+.preloader-wrapper {
+  position: absolute;
+  top: 368px;
+  left: 368px;
+}
+
+.cropper-container + .preloader-wrapper {
+  display: none;
+}
